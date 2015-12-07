@@ -192,7 +192,7 @@ public class TypeName {
       }
 
       @Override public TypeName visitTypeVariable(javax.lang.model.type.TypeVariable t, Void p) {
-        return TypeVariableName.get(t);
+        return TypeVariableName.get(t.toString());
       }
 
       @Override public TypeName visitWildcard(javax.lang.model.type.WildcardType t, Void p) {
